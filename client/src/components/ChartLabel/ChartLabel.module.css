@@ -1,0 +1,8 @@
+.container {
+    margin-top: -5px;
+    padding: 5px;
+    width: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: left;
+}

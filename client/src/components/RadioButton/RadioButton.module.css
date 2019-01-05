@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container:hover input ~ .pseudoRadio {
+    background-color: #ccc;
+}
+
+.container:hover input:disabled ~ .pseudoRadio {
+    background-color: #eee;
+}
+
+.container:hover input:checked:disabled ~ .pseudoRadio {
+    background-color: black;
+}
+
+.container input:disabled ~ .pseudoRadio {
+    opacity: 0.7;
+    cursor: auto;
+}
+
+.container input:checked ~ .pseudoRadio {
+    background-color: black;
+}
+
+.pseudoRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.pseudoRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .pseudoRadio:after {
+    display: block;
+}
+
+.container .pseudoRadio:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}

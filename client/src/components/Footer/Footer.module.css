@@ -1,0 +1,9 @@
+.container {
+    padding: 20px;
+    background-color: white;
+    border-top: #e7e9ec 2px solid;
+    box-sizing: border-box;
+
+    font-size: 13px;
+    color: #d3d3d3;
+}

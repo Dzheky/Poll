@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-bottom: #e7e9ec 2px solid;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #545454;
+    user-select: none;
+}
+
+@media all and (max-width: 736px) {
+    .container {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        font-size: 11px;
+        text-align: center;
+    }
+}

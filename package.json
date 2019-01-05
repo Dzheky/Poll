@@ -1,0 +1,20 @@
+{
+  "name": "poll",
+  "version": "1.0.0",
+  "description": "Simpole Poll",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install concurrently && concurrently 'npm install' 'cd client && npm install'",
+    "start": "concurrently 'node index.js' 'cd client && npm start'",
+    "startServer": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "got": "^9.5.0",
+    "lowdb": "^1.0.0",
+    "nodejs": "0.0.0"
+  }
+}

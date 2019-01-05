@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 736px) {
+    .container {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        font-size: 11px;
+        text-align: center;
+    }
+}
